@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,target-densitydpi=medium-dpi">
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="stylesheet" type="text/css" href="../../style.css" charset="UTF-8" />
+<style type="text/css">
+.w1 {width:28%}
+.w2 {width:20%}
+.w3 {width:24%}
+#layer{display:none}
+</style>
+<script type="text/JavaScript" src="../../function.js"></script>
+<script type="text/JavaScript" src="../../jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+var ID = "";
+function idValue(n) {ID = n;}
+</script>
+</head>
+<body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
+  <div class="post_ct" id="viewTypeSelector">
+<p><span id="snum"></span><span id="tag"></span></p>
+<p><b>Y 시에 중개사무소를 둔 개업공인중개사 A의 중개로 매도인</b><span class="rs">(甲)</span><b>과 매수인</b><span class="rs">(乙)</span> <b>간에 X 주택을 2억원에 매매하는 계약을 체결하고 동시에 乙이 임차인</b><span class="rs">(丙)</span><b>에게 X 주택을 보증금 3천만원, 월차임 20만원에 임대하는 계약을 체결하였다. A가 乙에게 받을 수 있는 중개보수의 최고액은?</b></p>
+<br>
+<table class="tb f16" cellspacing="0" style="text-align:center">
+<tr>
+  <td class="td obg w1">Y시 조례</td>
+  <td class="td obg w1">거래가액</td>
+  <td class="td obg w2">요율</td><td class="td obg w3">한도액</td></tr>
+<tr><td rowspan="2" class="td"><p>매매</p>교환</p></td>
+  <td class="td"><p>5천 <span class="f15">이상</span></p>
+    <p>2억 <span class="f15">미만</span></p></td>
+  <td class="td">0.5<span class="mrs">%</span></td><td class="td">80<span class="f15">만원</span></td></tr>
+<tr>
+  <td class="td"><p>2억 <span class="f15">이상</span></p>
+    <p>6억 <span class="f15">미만</span></p></td>
+  <td class="td">0.4<span class="mrs">%</span></td>
+  <td class="td">-</td>
+</tr>
+<tr><td rowspan="2" class="td">임대차</td>
+  <td class="td"><p>5천 <span class="f15">미만</span></p>
+    </td>
+  <td class="td">0.5<span class="mrs">%</span></td>
+  <td class="td">20<span class="f15">만원</span></td>
+</tr>
+<tr>
+  <td class="td"><p>5천 <span class="f15">이상</span></p>
+    <p>1억 <span class="f15">미만</span></p></td>
+  <td class="td">0.4<span class="mrs">%</span></td>
+  <td class="td">30<span class="f15">만원</span></td>
+</tr>
+</table>
+<br>
+<br>
+<p id="ip1"><font id="i1"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i1');">①</span> 80만원<span onMouseDown="memoEdit();" id="mi1"></span></p>
+<br>
+<p id="ip2"><font id="i2"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i2');">②</span> 95만원<span onMouseDown="memoEdit();" id="mi2"></span></p>
+<br>
+<p id="ip3"><font id="i3"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i3');">③</span> 100만원<span onMouseDown="memoEdit();" id="mi3"></span></p>
+<br>
+<p id="ip4"><font id="i4"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i4');">④</span> 102만원<span onMouseDown="memoEdit();" id="mi4"></span></p>
+<br>
+<p id="ip5"><font id="i5"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i5');">⑤</span> 125만원<span onMouseDown="memoEdit();" id="mi5"></span></p>
+<br>
+</div>
+<div id="layer" onClick="PopLayer.Close();">
+<table class="tb" cellspacing="0" style="background-color:#fffddd; font-size:18px">
+<tr><td class="td" onMouseDown="marking(ID,'Ｏ');">&nbsp;Ｏ&nbsp;</td><td class="td" onMouseDown="marking(ID,'Ｘ');">&nbsp;Ｘ&nbsp;</td><td class="td" onMouseDown="marking(ID,'Ｖ');">&nbsp;Ｖ&nbsp;</td><td class="td" style="color:#339900" onMouseDown="marking(ID,'？');">&nbsp;？&nbsp;</td><td class="td" style="color:#0099FF"  onMouseDown="marking(ID,'☆');">&nbsp;☆&nbsp;</td><td class="td" onMouseDown="marking(ID,'');">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="td" style="color:#6c54d5" onMouseDown="memoBox(ID);">&nbsp;Ｔ&nbsp;</td></tr>
+</table>
+</div>
+<iframe src="../../index.html" frameborder="0" width="0px" height="0px" onload="autoResize(this)" scrolling="no"></iframe>
+</body>
+</html>

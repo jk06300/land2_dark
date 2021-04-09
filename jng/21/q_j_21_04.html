@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,target-densitydpi=medium-dpi">
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="stylesheet" type="text/css" href="../../style.css" charset="UTF-8" />
+<style type="text/css">
+.va {vertical-align:top}
+.mt {margin-top:-5px}
+.w1 {width:306px}
+.w2 {width:240px}
+#layer{display:none}
+</style>
+<script type="text/JavaScript" src="../../function.js"></script>
+<script type="text/JavaScript" src="../../jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+var ID = "";
+function idValue(n) {ID = n;}
+</script>
+</head>
+<body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
+  <div class="post_ct" id="viewTypeSelector">
+<p><span id="snum"></span><span id="tag"></span></p>
+<p><b>다음 중 과태료 부과처분대상자, 부과금액 기준, 부과권자가 바르게 연결된 것은?</b></p>
+<br>
+<p id="ip1" class="mb15"><font id="i1"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i1');">①</span> 중개사무소등록증을 게시하지 않은 개업공인중개사</p>
+<table class="tb f16 mb10" cellspacing="0">
+<tr><td class="td obg va w1">100만원 이하</td>
+<td class="td va w2">등록관청</td>
+</tr>
+</table>
+<p><span onMouseDown="memoEdit();" id="mi1"></span></p>
+<p class="mt"><br></p>
+<p id="ip2" class="mb15"><font id="i2"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i2');">②</span> 중개사무소 개설등록이 취소되었으나 중개사무소등록증을 반납하지 않은 개업공인중개사</p>
+<table class="tb f16 mb10" cellspacing="0">
+<tr><td class="td obg va w1">500만원 이하</td>
+<td class="td va w2">등록관청</td>
+</tr>
+</table>
+<p><span onMouseDown="memoEdit();" id="mi2"></span></p>
+<p class="mt"><br></p>
+<p id="ip3" class="mb15"><font id="i3"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i3');">③</span> 부동산거래신고 의무가 있음에도 부동산거래신고를 하지 않은 개업공인중개사</p>
+<table class="tb f16 mb10" cellspacing="0">
+<tr><td class="td obg va w1">해당 토지 또는 건축물에 대한 취득세의 3배 이하 상당액</td>
+<td class="td va w2">국토교통부장관</td>
+</tr>
+</table>
+<p><span onMouseDown="memoEdit();" id="mi3"></span></p>
+<p class="mt"><br></p>
+<p id="ip4" class="mb15"><font id="i4"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i4');">④</span> 부동산거래정보망 운영규정을 승인받지 않고 부동산거래정보망을 운영한 거래정보사업자</p>
+<table class="tb f16 mb10" cellspacing="0">
+<tr><td class="td obg va w1">100만원 이하</td>
+<td class="td va w2">신고관청</td>
+</tr>
+</table>
+<p><span onMouseDown="memoEdit();" id="mi4"></span></p>
+<p class="mt"><br></p>
+<p id="ip5" class="mb15"><font id="i5"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i5');">⑤</span> 부동산거래신고사항 누락에 따른 거래대금지급증명자료를 제출하지 않은 거래 당사자</p>
+<table class="tb f16 mb10" cellspacing="0">
+<tr><td class="td obg va w1">3천만원 이하</td>
+<td class="td va w2">시ㆍ도지사</td>
+</tr>
+</table>
+<p><span onMouseDown="memoEdit();" id="mi5"></span></p>
+<br>
+</div>
+<div id="layer" onClick="PopLayer.Close();">
+<table class="tb" cellspacing="0" style="background-color:#fffddd; font-size:18px">
+<tr><td class="td" onMouseDown="marking(ID,'Ｏ');">&nbsp;Ｏ&nbsp;</td><td class="td" onMouseDown="marking(ID,'Ｘ');">&nbsp;Ｘ&nbsp;</td><td class="td" onMouseDown="marking(ID,'Ｖ');">&nbsp;Ｖ&nbsp;</td><td class="td" style="color:#339900" onMouseDown="marking(ID,'？');">&nbsp;？&nbsp;</td><td class="td" style="color:#0099FF"  onMouseDown="marking(ID,'☆');">&nbsp;☆&nbsp;</td><td class="td" onMouseDown="marking(ID,'');">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="td" style="color:#6c54d5" onMouseDown="memoBox(ID);">&nbsp;Ｔ&nbsp;</td></tr>
+</table>
+</div>
+<iframe src="../../index.html" frameborder="0" width="0px" height="0px" onload="autoResize(this)" scrolling="no"></iframe>
+</body>
+</html>
