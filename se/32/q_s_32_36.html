@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,target-densitydpi=medium-dpi">
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="stylesheet" type="text/css" href="../../style.css" charset="UTF-8" />
+<style type="text/css">
+#layer{display:none}
+</style>
+<script type="text/JavaScript" src="../../function.js"></script>
+<script type="text/JavaScript" src="../../jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+var ID = "";
+function idValue(n) {ID = n;}
+</script>
+</head>
+<body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
+<div class="post_ct " id="viewTypeSelector">
+<p><span id="snum"></span><span id="tag"></span></p>
+<p><b>다음은 거주자 甲의 상가건물 양도소득세 관련 자료이다. 이 경우 양도차익은?</b> <span class="qrs">(단, 양도차익을 최소화하는 방향으로 필요경비를 선택하고, 부가가치세는 고려하지 않음)</span></p>
+<br>
+<p class="mb15"><span class="sb dp">■</span><span class="dp1">취득 내역</span></p>
+<table class="tb f16" cellspacing="0" style="text-align:center">
+<tr><td width="50%" class="td obg">실지거래가액</td><td class="td">확인 불가능</td></tr>
+<tr><td class="td obg">기준시가</td><td class="td">2억원</td></tr>
+<tr><td class="td obg">거래일자</td><td class="td">2020. 3. 7.</td></tr>
+</table>
+<br>
+<p class="mb15"><span class="sb dp">■</span><span class="dp1">양도 내역</span></p>
+<table class="tb f16" cellspacing="0" style="text-align:center">
+<tr><td width="50%" class="td obg">실지거래가액</td><td class="td">5억원</td></tr>
+<tr><td class="td obg">기준시가</td><td class="td">4억원</td></tr>
+<tr><td class="td obg">거래일자</td><td class="td">2021. 4. 30.</td></tr>
+</table>
+<br>
+<p class="mb15"><span class="sb dp">■</span><span class="dp1">자본적지출액 및 소개비</span></p>
+<table class="tb f16" cellspacing="0">
+<tr><td class="td obg">
+2억 6천만원 <span class="mrs">(세금계산서 수취함)</span>
+</td></tr>
+</table>
+<br>
+<p class="mb20"><span class="sb dp">■</span><span class="dp1">주어진 자료 외에는 고려하지 않는다.</span></p>
+<br>
+<p id="ip1"><font id="i1"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i1');">①</span> 2억원<span onMouseDown="memoEdit();" id="mi1"></span></p>
+<br>
+<p id="ip2"><font id="i2"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i2');">②</span> 2억 4천만원<span onMouseDown="memoEdit();" id="mi2"></span></p>
+<br>
+<p id="ip3"><font id="i3"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i3');">③</span> 2억 4천4백만원<span onMouseDown="memoEdit();" id="mi3"></span></p>
+<br>
+<p id="ip4"><font id="i4"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i4');">④</span> 2억 5천만원<span onMouseDown="memoEdit();" id="mi4"></span></p>
+<br>
+<p id="ip5"><font id="i5"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i5');">⑤</span> 2억 6천만원<span onMouseDown="memoEdit();" id="mi5"></span></p>
+<br>
+</div>
+<div id="layer" onClick="PopLayer.Close();">
+<table class="tb" cellspacing="0" style="background-color:#fffddd; font-size:18px">
+<tr><td class="td" onMouseDown="marking(ID,'Ｏ');">&nbsp;Ｏ&nbsp;</td><td class="td" onMouseDown="marking(ID,'Ｘ');">&nbsp;Ｘ&nbsp;</td><td class="td" onMouseDown="marking(ID,'Ｖ');">&nbsp;Ｖ&nbsp;</td><td class="td" style="color:#339900" onMouseDown="marking(ID,'？');">&nbsp;？&nbsp;</td><td class="td" style="color:#0099FF"  onMouseDown="marking(ID,'☆');">&nbsp;☆&nbsp;</td><td class="td" onMouseDown="marking(ID,'');">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="td" style="color:#6c54d5" onMouseDown="memoBox(ID);">&nbsp;Ｔ&nbsp;</td></tr>
+</table>
+</div>
+<iframe src="../../index.html" frameborder="0" width="0px" height="0px" onload="autoResize(this)" scrolling="no"></iframe>
+</body>
+
+</html>
