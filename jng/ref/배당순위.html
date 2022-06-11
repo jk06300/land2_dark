@@ -5,70 +5,101 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,target-densitydpi=medium-dpi">
 <meta name="robots" content="noindex,nofollow"/>
 <link rel="stylesheet" type="text/css" href="../../style.css" charset="UTF-8" />
-<style type="text/css">
-.w1 {width:17%;text-align:center}
-.w2 {width:33%;text-align:center}
-</style>
+
 </head>
 <body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
-<table class="tb f15" cellspacing="0">
-<tr style="text-align:center">
-<td class="td bc">순위</td><td class="td bc">권리내용</td><td class="td bc">변제방법</td></tr>
-<tr><td class="td w1">1</td><td id="tr1" class="td">경매집행비용</td><td class="td w2">비용변제</td></tr>
-<tr><td class="td w1">2</td>
-  <td id="tr2" class="td">저당물의 제3취득자가 부동산에 지출한 필요비, 유익비</td>
-  <td class="td w2">비용변제</td>
-</tr>
-<tr><td rowspan="2" class="td w1">3</td>
-  <td id="tr3" class="td">소액임차인 보증금 중 일정금액</td>
-  <td rowspan="2" class="td w2">최우선변제</td>
-</tr>
-<tr>
-  <td id="tr4" class="td">최종 3개월분 임금, 최종 3년간의 퇴직금, 재해보상금</td>
-</tr>
-</tr>
-<tr><td rowspan="2" class="td w1">4</td>
-  <td id="tr3" class="td">법정기일 전에 설정된 전세권ㆍ질권ㆍ저당권에 의하여 담보된 채권</td>
-  <td rowspan="2" class="td w2">최우선변제</td>
-</tr>
-<tr>
-  <td id="tr4" class="td">법정기일 전에 대항요건과 확정일자를 갖춘 임차보증금</td>
-</tr>
-<tr>
-  <td class="td w1">5</td>
-  <td id="tr5" class="td"><p>당해세</p>
-  <span class="mrs">(저당물 자체에 부과된 국세 및 지방세)</span></td>
-  <td class="td w2">최우선변제</td>
-</tr>
-<tr>
-  <td rowspan="3" class="td w1">6</td>
-  <td id="tr6" class="td">법정기일 후에 설정된 전세권ㆍ질권ㆍ저당권에 의하여 담보된 채권</td>
-  <td rowspan="3" class="td w2">우선변제</td>
-</tr>
-<tr>
-  <td id="tr7" class="td"><p>압류채권</p>
-  <span class="mrs">(당해세 아닌 국세 및 지방세)</span></td>
-</tr>
-<tr>
-  <td id="tr8" class="td">법정기일 후에 확정일자를 갖춘 임차보증금</td>
-</tr>
-<tr>
-  <td class="td w1">7</td>
-  <td id="tr9" class="td">일반임금채권</td>
-  <td class="td w2">우선변제</td>
-</tr>
-<tr>
-  <td class="td w1">8</td>
-  <td id="tr12" class="td"><p>공과금</p>
-  <span class="mrs">(국민연금보험료, 건강보험료 등)</span></td>
-  <td class="td w2">우선변제</td>
-</tr>
-<tr>
-  <td class="td w1">9</td>
-  <td id="tr13" class="td">일반채권 <span class="mrs">(가압류 등)</span></td>
-  <td class="td w2">우선변제</td>
-</tr>
+<p id="t">경매 배당순위</p>
+<br>
+<p class="mb15"><span id="st1" class="sb">■</span> 0 순위</p>
+<table class="tb f16" cellspacing="0">
+<tr><td id="tr1" class="td obg">
+경매절차비용
+</td></tr>
+<tr><td id="tr2" class="td">
+<p class="mb5"><span class="sb1 dp">●</span><span class="dp1">경매 신청비용과 예납금 <span class="mrs">(물건 현황조사, 감정평가 등)</span></span></p>
+<p><span class="sb1 dp">●</span><span class="dp1">보통 낙찰가의 2~5% 정도</span></p>
+</td></tr>
 </table>
 <br>
+<p class="mb15"><span id="st2" class="sb">■</span> 1 순위</p>
+<table class="tb f16" cellspacing="0">
+<tr><td id="tr3" class="td obg" colspan="2">
+필요비와 유익비
+</td></tr>
+<tr><td id="tr4" class="td">
+<p><span class="sb1 dp">●</span><span class="dp1">저당물의 제3취득자가 부동산에 지출한 필요비, 유익비 <span class="mrs">(인테리어 비용은 포함 ×)</span></span></p>
+</td></tr>
+</table>
+<br>
+<p class="mb15"><span id="st3" class="sb">■</span> 2 순위</p>
+<table class="tb f16" cellspacing="0">
+<tr><td id="tr5" class="td obg">
+임금채권과 최우선변제권
+</td></tr>
+<tr><td id="tr6" class="td">
+<p class="mb5"><span class="sb1 dp">●</span><span class="dp1">최종 3개월분 임금, 3년간 퇴직금, 재해보상금 등</span></p>
+<p><span id="tr6n2" class="sb1 dp">●</span><span id="tr6b2" class="dp1">소액임차인 보증금 중 일정금액</span></p>
+</td></tr>
+</table>
+<br>
+<p class="mb15"><span id="st4" class="sb">■</span> 3 순위</p>
+<table class="tb f16" cellspacing="0">
+<tr><td id="tr7" class="td obg">
+당해세
+</td></tr>
+<tr><td id="tr8" class="td">
+<p><span class="sb1 dp">●</span><span class="dp1">저당물 자체에 부과된 국세 및 지방세</span></p>
+</td></tr>
+</table>
+<br>
+<p class="mb15"><span id="st5" class="sb">■</span> 4 순위</p>
+<table class="tb f16" cellspacing="0">
+<tr><td id="tr9" class="td obg">
+우선변제권 <span class="mrs">(설정순으로 배당)</span>
+</td></tr>
+<tr><td id="tr10" class="td">
+<p class="mb5"><span class="sb1 dp">●</span><span class="dp1">확정일자부 임차인 보증금</span></p>
+<p class="mb5"><span class="sb1 dp">●</span><span class="dp1">근저당권, 전세권, 담보가등기, 임차권등기 등</span></p>
+<p><span class="sb1 dp">●</span><span class="dp1">당해세 이외의 조세<span class="mrs">(국세, 지방세)</span> 및 가산세, 가산금</span></p>
+</td></tr>
+</table>
+<br>
+<p class="mb15"><span id="st6" class="sb">■</span> 5 순위</p>
+<table class="tb f16" cellspacing="0">
+<tr><td id="tr11" class="td obg">
+일반임금채권
+</td></tr>
+<tr><td id="tr12" class="td">
+<p><span class="sb1 dp">●</span><span class="dp1">최종 3개월분 임금을 제외한 임금채권</span></p>
+</td></tr>
+</table>
+<br>
+<p class="mb15"><span id="st7" class="sb">■</span> 6 순위</p>
+<table class="tb f16" cellspacing="0">
+<tr><td id="tr13" class="td obg">
+저당권보다 순위가 늦은 당해세 이외의 국세와 지방세 등
+</td></tr>
+</table>
+<br>
+<p class="mb15"><span id="st8" class="sb">■</span> 7 순위</p>
+<table class="tb f16" cellspacing="0">
+<tr><td id="tr14" class="td obg">
+공과금
+</td></tr>
+<tr><td id="tr15" class="td">
+<p><span id="tr15n1" class="sb1 dp">●</span><span id="tr15b1" class="dp1">국민연금보험료, 건강보험료 등</span></p>
+</td></tr>
+</table>
+<br>
+<p class="mb15"><span id="st9" class="sb">■</span> 8 순위</p>
+<table class="tb f16" cellspacing="0">
+<tr><td id="tr16" class="td obg">
+일반채권
+</td></tr>
+<tr><td id="tr17" class="td">
+<p><span class="sb1 dp">●</span><span class="dp1">우선변제권이 없는 가압류채권, 일반채권, 과태료 등</span></p>
+</td></tr>
+</table>
+<span id="br"><br></span>
 </body>
 </html>
