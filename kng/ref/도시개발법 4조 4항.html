@@ -9,6 +9,17 @@
 <style type="text/css">
 .w1 {width:27%;text-align:center}
 </style>
+<script language="JavaScript">
+function dDay() {
+var y = 2022;
+var m = 10;
+var d = 30;
+var today = new Date();
+var dday = new Date(y, m-1, d);
+var n = Math.floor((dday.getTime()-today.getTime())/86400000)+1;
+if (n >= 0) {document.write("<span class='bk hcolor' style='margin-top:5px'>(2022. 6. 21. 신설)</span>");}
+}
+</script>
 </head>
 <body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
 <p id="t" class="mb15">지정권자는</p>
@@ -34,20 +45,23 @@
 <tr><td class="td w1" colspan="1" rowspan="6">5/100<br>이상</td><td class="td">편입되는 토지의 면적</td></tr>
 <tr><td class="td">신설되는 기반시설의 총면적</td></tr>
 <tr><td class="td">
-<p>신설되는 용도의 토지 총면적</p>
+<p class="mb5">신설되는 용도의 토지 총면적</p>
 <p><span class="mrs">(용도별 변경 면적이 1천㎡ 이상인 경우로 한정하며, 기반시설은 제외)</span></p></td></tr>
 <tr><td class="td">공원ㆍ녹지의 면적</td></tr>
 <tr><td id="tr12" class="td">기반시설을 제외한 도시개발구역의 용적률</td></tr>
 <tr><td class="td">기반시설의 설치에 필요한 비용</td></tr>
-<tr><td class="td w1" colspan="1" rowspan="5">10/100<br>이상</td><td class="td">제외되는 토지의 면적</td></tr>
+<tr><td class="td w1" colspan="1" rowspan="6">10/100<br>이상</td><td class="td">제외되는 토지의 면적</td></tr>
 <tr><td class="td">토지의 편입이나 제외로 인하여 환지방식이 적용되는 면적 <span class="mrs">(증감)</span></td></tr>
 <tr><td id="tr16" class="td">도로를 제외한 기반시설의 면적</td></tr>
 <tr><td class="td">
-<p>용도별 면적의 증감</p>
+<p class="mb5">용도별 면적의 증감</p>
 <p><span class="mrs">(용도별 변경 면적이 1천㎡ 이상인 경우로 한정하며, 기반시설은 제외)</span></p></td></tr>
 <tr><td id="tr18" class="td">
-<p><span id="tr18pr1">수용예정인구의 증감</span></p>
+<p class="mb5"><span id="tr18pr1">수용예정인구의 증감</span></p>
 <p><span class="mrs">(변경후 3천명 미만 제외)</span></p></td></tr>
+<tr><td class="td">
+임대주택 건설용지의 면적 또는 임대주택 호수 감소<script language="JavaScript">dDay();</script>
+</td></tr>
 <tr><td class="td w1">3만㎡<br>이상</td><td class="td">편입ㆍ제외되는 면적</td></tr>
 <tr><td class="td w1">예외</td><td class="td">환경영향평가에 대한 협의 결과, 교통영향분석ㆍ개선대책 검토 결과 또는 사전재해영향성검토 협의 결과를 반영하는 개발계획의 변경 중 그 변경으로 사업비가 종전 총사업비보다 10/100 미만으로 증가하는 경우</td></tr></table>
 <table class="tb_2" cellspacing="0"><tr><td class="td_2">(법 4조 4항)</td></tr></table>
