@@ -1,4 +1,5 @@
 ﻿var bcm, dHeight, fColor, fName, pValue, tdColor, trColor;
+bcm = "dark";
 var qNum = "";
 var objVisible = 0;
 var preName = "";
@@ -529,6 +530,12 @@ function marking(i, n)	{
 				break;
 		}
 	}
+	if (document.getElementById("markName")) {
+		document.getElementById("markName").innerHTML = i;
+		document.getElementById("markType").innerHTML = n;
+	} else {
+		document.getElementById("layer").innerHTML = document.getElementById("layer").innerHTML + "<span style='color:#FFFFFF;opacity:0'><span id='markName'>" + i + "</span>" + "<span id='markType'>" + n + "</span></span>";
+	}
 	window.android.setMessage(i, n, '');
 }
 function setMessageGreen(i, n) {
@@ -635,6 +642,22 @@ function setMessage(i, t, m) {
 			document.getElementById(i).style.display="compact";
 			document.getElementById(i).style.paddingLeft = 10 + "px";
 		}
+	}
+	if (document.getElementById("markName")) {
+		document.getElementById("markName").innerHTML = i;
+		if (t == '') {
+			document.getElementById("markType").innerHTML = m;
+		} else {
+			document.getElementById("markType").innerHTML = t;
+		}
+	} else {
+		var mType
+		if (t == '') {
+			mType = m
+		} else {
+			mType = t
+		}
+		document.getElementById("layer").innerHTML = document.getElementById("layer").innerHTML + "<span style='color:#FFFFFF;opacity:0'><span id='markName'>" + i + "</span>" + "<span id='markType'>" + mType + "</span></span>";
 	}
 	window.android.setMessage(i, t, '');
 }
@@ -789,7 +812,7 @@ function ad(i) {
 function bcmDeclear(v) {
 	bcm = v;
 }
-function backgroundColorMode() {
+window.addEventListener('load', function backgroundColorMode() {
 	try{
 		if (bcm == "dark") {
 			document.body.style.color="#FFFFFF";
@@ -1427,7 +1450,7 @@ function backgroundColorMode() {
 			}
 		}
 	} catch(e) {}
-}
+});
 function bcMode()
 {
 	try{
