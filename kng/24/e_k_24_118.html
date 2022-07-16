@@ -8,26 +8,47 @@
 <link rel="stylesheet" type="text/css" href="../../style.css" charset="UTF-8" />
 <script type="text/JavaScript" src="../../function.js"></script>
 </head>
-<body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
+<body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false" onLoad="setReSize()" onResize="setReSize()">
 
 <div class="post_ct" id="viewTypeSelector">
-<p>①</p>
-<p>용적률 = (연면적/대지면적) × 100</p>
+<p class="mb15">①</p>
+<table class="tb f16" cellspacing="0">
+<tr><td class="td ebg">
+용적률 = (연면적/대지면적) × 100
+</td></tr>
+</table>
 <br>
-<iframe name="if1" src="../ref/건축법 시행령 119조 1항 4호.html" frameborder="0" width="100%" height="0px" onload="autoResize(this); tcolor('if1', 'tr1'); tcolor('if1', 'tr2')" scrolling="no"></iframe>
-<p>따라서,</p>
-<p>용적률 산정 시 지하 2개층의 바닥면적은 연면적에서 제외되고</p>
-<p>지상 5개층의 업무시설 바닥면적만 연면적에 포함된다.</p>
+<p class="mb15">연면적은</p>
+<table class="tb f16" cellspacing="0">
+<tr><td class="td obg">
+<p class="mb5"><span class="sb1 dp">●</span><span class="dp1">하나의 건축물 각 층의 바닥면적의 합계로 하되</span></p>
+<p><span class="sb1 dp">●</span><span class="dp1">지하층의 면적은 <a href="#" onClick="i('③<br>'); t('tr2'); p('tr1n2'); MM_showHideLayers('Layer1','../ref/건축법 시행령 119조 1항 4호.html','show'); return false;">제외</a>하므로</span></p>
+</td></tr>
+</table>
 <br>
-<p>지상 5개층의 업무시설 바닥면적</p>
-<p>= 5개층 × 각 층의 바닥면적 480㎡</p>
-<p>= 2,400㎡</p>
+<p class="mb15">연면적은</p>
+<table class="tb f16" cellspacing="0">
+<tr><td class="td ebg">
+<p class="mb5">각 층의 바닥면적 480㎡ × 지상 5개층</p>
+<p>= <span class="blue">2400㎡</span></p>
+</td></tr>
+</table>
 <br>
-<p class="mb5">대지면적 = 1,000㎡ 이므로</p>
-<p class="wb">용적률 = (2,400㎡/1,000㎡) × 100 = <span class="rgbg">240%</span></p>
+<p class="mb15">따라서, 용적률은</p>
+<table class="tb f16" cellspacing="0">
+<tr><td class="td tcolor">
+(2,400㎡/1,000㎡) × 100 = <span class="c99">240%</span>
+</td></tr>
+</table>
 <br>
 <br>
 </div>
+		  
+<div id="Layer1">
+<div><iframe name="layer1" id="layer1" src='' frameborder="0" scrolling="yes" class="if_pd" onload="ins('layer1','t',ia); tcolor('layer1',ta); ncolor('layer1',pa); bcMode()"></iframe></div>
+<div class="div_style"><a href="#" onClick="MM_showHideLayers('Layer1','','hide'); return false;" style="text-decoration:none"><span style="color:#009688">×</span></a></div>
+</div>
+
 <iframe src="../../index.html" frameborder="0" width="0px" height="0px" onload="autoResize(this)" scrolling="no"></iframe>
 </body>
 

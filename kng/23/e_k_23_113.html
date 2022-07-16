@@ -8,14 +8,32 @@
 <link rel="stylesheet" type="text/css" href="../../style.css" charset="UTF-8" />
 <script type="text/JavaScript" src="../../function.js"></script>
 </head>
-<body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
+<body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false" onLoad="setReSize()" onResize="setReSize()">
 
 <div class="post_ct" id="viewTypeSelector">
 <p>③</p>
-<iframe name="if3" src="../ref/건축법 시행령 119조 1항 9호.html" frameborder="0" width="100%" height="0px" onload="autoResize(this); tcolor('if3', 'tr1')" scrolling="no"></iframe>
-<p>따라서,&nbsp; 16ｍ / 4ｍ = 4층</p>
+<p class="mb15">층의 구분이 명확하지 않은 경우</p>
+<table class="tb f16" cellspacing="0">
+<tr><td class="td obg">
+<p class="mb5"><span class="sb1 dp">●</span><span class="dp1">건축물의 높이 4ｍ마다</span></p>
+<p><span class="sb1 dp">●</span><span class="dp1">하나의 층으로 <a href="#" onClick="i('③<br>'); t('tr2'); p('st1'); MM_showHideLayers('Layer1','../ref/건축법 시행령 119조 1항 9호.html','show'); return false;">산정</a>하므로</span></p>
+</td></tr>
+</table>
+<br>
+<table class="tb f16" cellspacing="0">
+<tr><td class="td tcolor">
+16ｍ / 4ｍ = <span class="c99">4층</span>
+</td></tr>
+</table>
+<br>
 <br>
 </div>
+		  
+<div id="Layer1">
+<div><iframe name="layer1" id="layer1" src='' frameborder="0" scrolling="yes" class="if_pd" onload="ins('layer1','t',ia); tcolor('layer1',ta); ncolor('layer1',pa); bcMode()"></iframe></div>
+<div class="div_style"><a href="#" onClick="MM_showHideLayers('Layer1','','hide'); return false;" style="text-decoration:none"><span style="color:#009688">×</span></a></div>
+</div>
+
 <iframe src="../../index.html" frameborder="0" width="0px" height="0px" onload="autoResize(this)" scrolling="no"></iframe>
 </body>
 
