@@ -15,13 +15,27 @@
 var ID = "";
 function idValue(n) {ID = n;}
 </script>
+<script type="text/javascript">
+var ID = "";
+function idValue(n) {ID = n;}
+function dDay() {
+var y = 2023;
+var m = 1;
+var d = 1;
+var today = new Date();
+var dday = new Date(y, m-1, d);
+var n = Math.floor((dday.getTime()-today.getTime())/86400000)+1;
+if (n >= 0) {document.write("(2023.1.1.부터 적용)");
+}
+}
+</script>
 </head>
 <body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
   <div class="post_ct" id="viewTypeSelector">
 <p><span id="snum"></span><span id="tag"></span></p>
 <p><b>소득세법상 거주자의 양도소득세에 관한 설명으로 틀린 것은?</b> <span class="qrs">(단, 국내소재 부동산을 양도한 경우임)</span></p>
 <br>
-<p id="ip1"><font id="i1"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i1');">①</span> 양도소득 과세표준은 종합소득, 퇴직소득 및 금융투자소득에 대한 과세표준과 구분하여 계산한다.<span onMouseDown="memoEdit();" id="mi1"></span></p>
+<p id="ip1"><font id="i1"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i1');">①</span> 양도소득 과세표준은 종합소득, 퇴직소득 및 금융투자소득<span class="mrs"><script language="JavaScript">dDay();</script></span>에 대한 과세표준과 구분하여 계산한다.<span onMouseDown="memoEdit();" id="mi1"></span></p>
 <br>
 <p id="ip2"><font id="i2"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i2');">②</span> 양도차익 계산 시 증여에 의하여 취득한 토지는 증여를 받은 날을 취득시기로 한다.<span onMouseDown="memoEdit();" id="mi2"></span></p>
 <br>
