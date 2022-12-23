@@ -11,24 +11,6 @@
 </style>
 <script type="text/JavaScript" src="../../function.js"></script>
 <script type="text/JavaScript" src="../../jquery-3.4.1.min.js"></script>
-<script type="text/javascript">
-var ID = "";
-function idValue(n) {ID = n;}
-</script>
-<script type="text/javascript">
-var ID = "";
-function idValue(n) {ID = n;}
-function dDay() {
-var y = 2023;
-var m = 1;
-var d = 1;
-var today = new Date();
-var dday = new Date(y, m-1, d);
-var n = Math.floor((dday.getTime()-today.getTime())/86400000)+1;
-if (n >= 0) {document.write("(2023.1.1.부터 적용)");
-}
-}
-</script>
 </head>
 <body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
   <div class="post_ct" id="viewTypeSelector">
@@ -41,9 +23,9 @@ if (n >= 0) {document.write("(2023.1.1.부터 적용)");
 <br>
 <p id="ip3"><font id="i3"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i3');">③</span> 지상권의 양도는 양도소득세 과세대상이다.<span onMouseDown="memoEdit();" id="mi3"></span></p>
 <br>
-<p id="ip4"><font id="i4"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i4');">④</span> 국내거주자의 양도소득세 과세표준은 종합소득, 퇴직소득 및 금융투자소득<span class="mrs"><script language="JavaScript">dDay();</script></span>의 과세표준과 구분하여 계산한다.<span onMouseDown="memoEdit();" id="mi4"></span></p>
+<p id="ip4"><font id="i4"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i4');">④</span> 국내거주자의 양도소득세 과세표준은 종합소득, 퇴직소득 및 금융투자소득의 과세표준과 구분하여 계산한다.<span onMouseDown="memoEdit();" id="mi4"></span></p>
 <br>
-<p id="ip5"><font id="i5"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i5');">⑤</span> 국내거주자가 토지와 주식을 양도하는 경우 각각 발생한 결손금은 양도소득금액 계산시 이를 통산한다.<span onMouseDown="memoEdit();" id="mi5"></span></p>
+<p id="ip5"><font id="i5"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i5');">⑤</span> 국내거주자가 토지와 신탁 수익권을 양도하는 경우 각각 발생한 결손금은 양도소득금액 계산시 이를 통산한다.<span onMouseDown="memoEdit();" id="mi5"></span></p>
 <br>
 </div>
 <div id="layer" onClick="PopLayer.Close();">

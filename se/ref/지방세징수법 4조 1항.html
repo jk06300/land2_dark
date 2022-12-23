@@ -5,6 +5,32 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,target-densitydpi=medium-dpi">
 <meta name="robots" content="noindex,nofollow"/>
 <link rel="stylesheet" type="text/css" href="../../style.css" charset="UTF-8" />
+<script language="JavaScript">
+function dDay1() {
+var y = 2023;
+var m = 11;
+var d = 1;
+var today = new Date();
+var dday = new Date(y, m-1, d);
+var n = Math.floor((dday.getTime()-today.getTime())/86400000)+1;
+if (n >= 0) {document.write("지방세");
+} else {
+document.write("지방세 <span class='trs'>(가산세 제외)</span>");
+}
+}
+function dDay2() {
+var y = 2023;
+var m = 11;
+var d = 1;
+var today = new Date();
+var dday = new Date(y, m-1, d);
+var n = Math.floor((dday.getTime()-today.getTime())/86400000)+1;
+if (n >= 0) {document.write("가산금");
+} else {
+document.write("가산세");
+}
+}
+</script>
 </head>
 <body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
 <p id="t" class="mb15">지방자치단체 징수금 징수순위</p>
@@ -13,10 +39,10 @@
 체납처분비
 </td></tr>
 <tr><td id="tr2" class="td">
-지방세 <span class="trs">(가산세 제외)</span>
+<script language="JavaScript">dDay1();</script>
 </td></tr>
 <tr><td id="tr3" class="td">
-가산세
+<script language="JavaScript">dDay2();</script>
 </td></tr>
 </table>
 <table class="tb_2" cellspacing="0"><tr><td class="td_2">(법 4조 1항)</td></tr></table>
