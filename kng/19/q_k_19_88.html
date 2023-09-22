@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="../../style.css" charset="UTF-8" />
 <style type="text/css">
 .w {width:100%}
-.w1 {padding-right:5px;padding-top:20px;vertical-align}
+.w1 {padding-right:5px;padding-top:20px;vertical-align:top}
 .w2 {padding-left:5px;padding-top:20px;width:50%;vertical-align:top}
 .w3 {padding-left:5px;padding-top:20px;width:20%;vertical-align:top}
 .w4 {padding-left:5px;padding-top:20px;width:25%;vertical-align:top}
@@ -27,8 +27,8 @@ function idValue(n) {ID = n;}
 <p><span id="snum"></span><span id="tag"></span></p>
 <p><b>국토의 계획 및 이용에 관한 법령상 각 용도지역에 따른 건폐율과 용적률의 최대한도를 순서대로 바르게 연결한 것은? </b><span class="qrs">(단, 도시ㆍ군계획조례로 규정한 사항은 제외)</span></p>
 <p class="mb10"></p>
-<table class="w f16" cellspacing="0">
-<tr id="ip1">
+<table id="ip1" class="w f16" cellspacing="0">
+<tr>
   <td class="w1"><font id="i1"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i1');">①</span></td>
   <td class="w2">주거지역</td>
   <td class="w1">&nbsp;</td>
@@ -37,7 +37,9 @@ function idValue(n) {ID = n;}
   <td class="w4">500%</td>
 </tr>
 <tr><td colspan="6"><span onMouseDown="memoEdit();" id="mi1"></span></td></tr>
-<tr id="ip2">
+</table>
+<table id="ip2" class="w f16" cellspacing="0">
+<tr>
   <td class="w1"><font id="i2"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i2');">②</span></td>
   <td class="w2">상업지역</td>
   <td class="w1"></td>
@@ -46,7 +48,9 @@ function idValue(n) {ID = n;}
   <td class="w4">1,200%</td>
 </tr>
 <tr><td colspan="6"><span onMouseDown="memoEdit();" id="mi2"></span></td></tr>
-<tr id="ip3">
+</table>
+<table id="ip3" class="w f16" cellspacing="0">
+<tr>
   <td class="w1"><font id="i3"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i3');">③</span></td>
   <td class="w2">녹지지역</td>
   <td class="w1"></td>
@@ -55,7 +59,9 @@ function idValue(n) {ID = n;}
   <td class="w4">80%</td>
 </tr>
 <tr><td colspan="6"><span onMouseDown="memoEdit();" id="mi3"></span></td></tr>
-<tr id="ip4">
+</table>
+<table id="ip4" class="w f16" cellspacing="0">
+<tr>
   <td class="w1"><font id="i4"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i4');">④</span></td>
   <td class="w2">계획관리지역</td>
   <td class="w1"></td>
@@ -64,7 +70,9 @@ function idValue(n) {ID = n;}
   <td class="w4">100%</td>
 </tr>
 <tr><td colspan="6"><span onMouseDown="memoEdit();" id="mi4"></span></td></tr>
-<tr id="ip5">
+</table>
+<table id="ip5" class="w f16" cellspacing="0">
+<tr>
 <td class="w1"><font id="i5"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i5');">⑤</span></td>
   <td class="w2">자연환경보전지역</td>
   <td class="w1"></td>
