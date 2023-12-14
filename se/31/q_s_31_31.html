@@ -14,18 +14,6 @@
 <script type="text/javascript">
 var ID = "";
 function idValue(n) {ID = n;}
-function dDay() {
-var y = 2023;
-var m = 11;
-var d = 1;
-var today = new Date();
-var dday = new Date(y, m-1, d);
-var n = Math.floor((dday.getTime()-today.getTime())/86400000)+1;
-if (n >= 0) {document.write("지방세와 가산금 및 체납처분비");
-} else {
-document.write("지방세 및 체납처분비");
-}
-}
 </script>
 </head>
 <body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
@@ -41,7 +29,7 @@ document.write("지방세 및 체납처분비");
 <br>
 <p id="ip4"><font id="i4"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i4');">④</span> "납세자"란 납세의무자<span class="mrs">(연대납세의무자와 제2차 납세의무자 및 보증인 포함)</span>와 특별징수의무자를 말한다.<span onMouseDown="memoEdit();" id="mi4"></span></p>
 <br>
-<p id="ip5"><font id="i5"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i5');">⑤</span> "지방자치단체의 징수금"이란 <script language="JavaScript">dDay();</script>를 말한다. <span onMouseDown="memoEdit();" id="mi5"></span></p>
+<p id="ip5"><font id="i5"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i5');">⑤</span> "지방자치단체의 징수금"이란 지방세 및 체납처분비를 말한다.<span onMouseDown="memoEdit();" id="mi5"></span></p>
 <br>
 </div>
 <div id="layer" onClick="PopLayer.Close();">

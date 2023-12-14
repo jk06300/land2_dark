@@ -6,20 +6,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,target-densitydpi=medium-dpi">
 <meta name="robots" content="noindex,nofollow"/>
 <link rel="stylesheet" type="text/css" href="../../style.css" charset="UTF-8" />
-<script language="JavaScript">
-function dDay() {
-var y = 2023;
-var m = 11;
-var d = 1;
-var today = new Date();
-var dday = new Date(y, m-1, d);
-var n = Math.floor((dday.getTime()-today.getTime())/86400000)+1;
-if (n >= 0) {document.write("체납처분비, 지방세, 가산금");
-} else {
-document.write("체납처분비, 지방세 <span class='trs'>(가산세 제외)</span>, 가산세");
-}
-}
-</script>
 <style type="text/css">
 #layer{display:none}
 </style>
@@ -42,7 +28,7 @@ function idValue(n) {ID = n;}
 <br>
 <p id="ip4"><font id="i4"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i4');">④</span> 납세의무자가 지방세관계법에 따른 납부기한까지 지방세를 납부하지 않은 경우 산출세액의 100분의 20을 가산세로 부과한다.<span onMouseDown="memoEdit();" id="mi4"></span></p>
 <br>
-<p id="ip5"><font id="i5"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i5');">⑤</span> 지방자치단체 징수금의 징수순위는 <script language="JavaScript">dDay();</script>의 순서로 한다.<span onMouseDown="memoEdit();" id="mi5"></span></p>
+<p id="ip5"><font id="i5"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i5');">⑤</span> 지방자치단체 징수금의 징수순위는 체납처분비, 지방세<span class="mrs">(가산세 제외)</span>, 가산세의 순서로 한다.<span onMouseDown="memoEdit();" id="mi5"></span></p>
 <br>
 </div>
 <div id="layer" onClick="PopLayer.Close();">
