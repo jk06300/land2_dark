@@ -11,13 +11,12 @@
 </style>
 </head>
 <body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
-<p id="t">확인ㆍ설명서 <span class="trs">(주거용)</span></p>
-<br>
+<p id="t" class="mb15">확인ㆍ설명서 <span class="trs">(주거용)</span></p>
 <table class="tb f16" cellspacing="0">
 <tr id="tr1">
 <td width="44%" class="td bc">확인ㆍ설명 근거자료 등 <span class="mrs">(해당 항목 체크)</span></td>
 <td class="td">
-등기권리증 <span class="qrs">/</span> 등기사항증명서 <span class="qrs">/</span> 토지대장 <span class="qrs">/</span> 건축물대장 <span class="qrs">/</span> 지적도 <span class="qrs">/</span> 임야도 <span class="qrs">/</span> 토지이용계획확인서 <span class="qrs">/</span> 그 밖의 자료
+등기권리증 <span class="qrs">/</span> 등기사항증명서 <span class="qrs">/</span> 토지대장 <span class="qrs">/</span> 건축물대장 <span class="qrs">/</span> 지적도 <span class="qrs">/</span> 임야도 <span class="qrs">/</span> 토지이용계획확인서 <span class="qrs">/</span> 확정일자 부여현황 <span class="qrs">/</span> 전입세대확인서 <span class="qrs">/</span> 국세납세증명서 <span class="qrs">/</span> 지방세납세증명서 <span class="qrs">/</span> 그 밖의 자료
 </td></tr>
 <tr id="tr2">
 <td class="td bc">대상물건의 상태에 관한 자료 요구사항</td>
@@ -37,20 +36,23 @@
 </td></tr>
 <tr id="tr5">
 <td id="tr5td1" class="td bc">권리관계</td>
-<td id="tr5td2" class="td"><span id="tr5p1">등기부 기재사항</span> <span class="qrs">/</span> 민간임대 등록 여부 <span class="qrs">/</span> 계약갱신요구권 행사 여부 <span class="qrs">/</span> 다가구주택 확인서류
-제출여부</td>
+<td id="tr5td2" class="td"><span id="tr5p1">토지ㆍ건축물 등기부 기재사항</span> <span class="mrs">(소유권에 관한 사항, 소유권 외의 권리사항)</span>
 </tr>
 <tr id="tr6">
 <td id="tr6td1" class="td bc"><span id="tr6td1p1">토지이용계획</span>, 공법상 이용제한 및 거래규제에 관한 사항 <span class="mrs">(토지)</span></td>
 <td class="td">지역ㆍ지구 <span class="qrs">/</span> 건폐율 상한 <span class="qrs">/</span> 용적률 상한 <span class="qrs">/</span> 도시ㆍ군계획시설 <span class="qrs">/</span> 허가ㆍ신고구역 여부 <span class="qrs">/</span> 투기지역 여부 <span class="qrs">/</span> 지구단위계획구역 <span class="qrs">/</span> 그 밖의 도시ㆍ군관리계획 <span class="qrs">/</span> 그 밖의 이용제한 및 거래규제사항</td>
 </tr>
+<tr id="tr6_1">
+<td class="td bc">임대차 확인사항</td>
+<td class="td">확정일자 부여현황 정보 <span class="qrs">/</span> 국세 및 지방세 체납정보 <span class="qrs">/</span> 전입세대 확인서 <span class="qrs">/</span> 최우선변제금 <span class="qrs">/</span> 민간임대등록여부 <span class="qrs">/</span> 계약갱신 요구권 행사 여부</td>
+</tr>
 <tr id="tr7">
 <td id="tr7td1" class="td bc">입지조건</td>
-<td class="td">도로와의 관계</span> <span class="qrs">/</span> 접근성 <span class="qrs">/</span> 대중교통 <span class="qrs">/</span> 주차장 <span class="qrs">/</span> 교육시설 <span class="qrs">/</span> 판매 및 의료시설</td>
+<td class="td">도로와의 관계 <span class="qrs">/</span> 접근성 <span class="qrs">/</span> 대중교통 <span class="qrs">/</span> 주차장 <span class="qrs">/</span> 교육시설</td>
 </tr>
 <tr id="tr8">
 <td id="tr8td1" class="td bc">관리에 관한 사항</td>
-<td class="td">경비실 <span class="qrs">/</span> 관리주체</td>
+<td class="td">경비실 <span class="qrs">/</span> 관리주체 <span class="qrs">/</span> 관리비</td>
 </tr>
 <tr id="tr9">
 <td id="tr9td1" class="td bc">비선호시설</td>
@@ -73,7 +75,7 @@
   </tr>
   <tr id="tr13">
     <td id="tr13td1" class="td bc">내부ㆍ외부 시설물의 상태 <span class="mrs">(건축물)</span></td>
-    <td id="tr13td2" class="td">수도 <span class="qrs">/</span> 전기 <span class="qrs">/</span> 가스<span class="mrs">(취사용)</span> <span class="qrs">/</span> 소방<span id="tr13td2r2" class="mrs">(단독경보형감지기)</span> <span class="qrs">/</span> 난방방식 및 연료공급 <span class="qrs">/</span> <span id="tr13p6">승강기</span> <span class="qrs">/</span> 배수 <span class="qrs">/</span> 가정자동화 시설<span class="mrs">(Home Automation 등 IT 관련 시설)</span></td>
+    <td id="tr13td2" class="td">수도 <span class="qrs">/</span> 전기 <span class="qrs">/</span> 가스<span class="mrs">(취사용)</span> <span class="qrs">/</span> 소방<span id="tr13td2r2" class="mrs">(단독경보형감지기)</span> <span class="qrs">/</span> 난방방식 및 연료공급 <span class="qrs">/</span> <span id="tr13p6">승강기</span> <span class="qrs">/</span> 배수 <span class="qrs">/</span> 그 밖의 시설물 <span class="mrs">(가정자동화 시설 설치 여부 기재)</span></td>
   </tr>
   <tr id="tr14">
     <td class="td bc">벽면ㆍ바닥면 및 도배상태</td>
@@ -82,6 +84,10 @@
   <tr id="tr15">
     <td id="tr15td1" class="td bc">환경조건</td>
     <td id="tr15td2" class="td">일조량 <span class="qrs">/</span> 소음 <span class="qrs">/</span> <span id="tr15p3">진동</span> </td>
+  </tr>
+  <tr id="tr15_1">
+    <td class="td bc">현장안내</td>
+    <td class="td">현장안내자 <span class="mrs">(개공ㆍ소공ㆍ보조원 구분 체크)</span></td>
   </tr>
 </table>
 <br>
