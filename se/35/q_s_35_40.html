@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,target-densitydpi=medium-dpi">
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="stylesheet" type="text/css" href="../../style.css" charset="UTF-8" />
+<style type="text/css">
+.w {width:100%}
+.w1 {padding-right:10px;padding-top:20px;vertical-align:top}
+.w2 {padding-left:5px;padding-top:20px;width:44%;vertical-align:top;text-align:center}
+.pb {padding-bottom:10px;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#464646}
+#layer{display:none}
+</style>
+<script type="text/JavaScript" src="../../function.js"></script>
+<script type="text/JavaScript" src="../../jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+var ID = "";
+var t1, t2, t3, t4, t5, t6, m;
+function idValue(n) {ID = n;}
+function txt(n1, n2, n3, n4, n5, n6, n7) {
+t1 = n1; t2 = n2; t3 = n3; t4 = n4; t5 = n5; t6 = n6; m = n7;
+}
+</script>
+</head>
+<body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
+<div class="post_ct " id="viewTypeSelector">
+<p><span id="snum"></span><span id="tag"></span></p>
+<p><b>다음 자료를 기초로 할 때 소득세법령상 거주자 甲이 확정신고시 신고할 건물과 토지 B의 양도소득과세표준을 각각 계산하면?</b> <span class="qrs">(단, 아래 자산 외의 양도자산은 없고, 양도소득과세표준 예정신고는 모두 하지 않았으며, 감면소득금액은 없다고 가정함)</span></p>
+<br>
+<table class="tb f15" cellspacing="0" style="text-align: center">
+<tr><td width="25%" class="td bc">구분</td><td width="25%" class="td bc">건물<br><span class="mrs">(주택 아님)</span></td><td width="25%" class="td bc">토지 A</td><td class="td bc">토지 B</td></tr>
+<tr><td class="td">양도차익<br>(차손)</td><td class="td">1,500만원</td><td class="td">(2천만원)</td><td class="td">2,500만원</td></tr>
+<tr><td class="td">양도일자</td><td class="td">2024.3.10</td><td class="td">2024.5.20</td><td class="td">2024.6.25</td></tr>
+<tr><td class="td">보유기간</td><td class="td">1년8개월</td><td class="td">4년3개월</td><td class="td">3년5개월</td></tr>
+</table>
+<br>
+<table class="tb f16" cellspacing="0">
+<tr><td class="td obg" colspan="4">
+<p class="mb5"><span class="sb1 dp">●</span><span class="dp1">위 자산은 모두 국내에 있으며 등기됨</span></p>
+<p class="mb5"><span class="sb1 dp">●</span><span class="dp1">토지 A, 토지 B는 비사업용 토지 아님</span></p>
+<p><span class="sb1 dp">●</span><span class="dp1">장기보유 특별공제율은 6%로 가정함</span></p>
+</td></tr>
+</table>
+<br>
+<table class="w f16" cellspacing="0">
+<tr>
+  <td class="w1">&nbsp;</td>
+  <td class="w2 pb">건물</td>
+  <td class="w1">&nbsp;</td>
+  <td class="w2 pb">토지 B</td>
+</tr>
+</table>
+<table id="ip1" class="w f16" cellspacing="0">
+<tr>
+  <td class="w1"><font id="i1"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i1');">①</span></td>
+  <td class="w2">0원</td>
+  <td class="w1">&nbsp;</td>
+  <td class="w2">16,000,000원</td>
+</tr>
+<tr><td colspan="4"><span onMouseDown="memoEdit();" id="mi1"></span></td></tr>
+</table>
+<table id="ip2" class="w f16" cellspacing="0">
+<tr>
+  <td class="w1"><font id="i2"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i2');">②</span></td>
+  <td class="w2">0원</td>
+  <td class="w1">&nbsp;</td>
+  <td class="w2">18,500,000원</td>
+</tr>
+<tr><td colspan="4"><span onMouseDown="memoEdit();" id="mi2"></span></td></tr>
+</table>
+<table id="ip3" class="w f16" cellspacing="0">
+<tr>
+  <td class="w1"><font id="i3"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i3');">③</span></td>
+  <td class="w2">11,600,000원</td>
+  <td class="w1">&nbsp;</td>
+  <td class="w2">5,000,000원</td>
+</tr>
+<tr><td colspan="4"><span onMouseDown="memoEdit();" id="mi3"></span></td></tr>
+</table>
+<table id="ip4" class="w f16" cellspacing="0">
+<tr>
+  <td class="w1"><font id="i4"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i4');">④</span></td>
+  <td class="w2">12,500,000원</td>
+  <td class="w1">&nbsp;</td>
+  <td class="w2">3,500,000원</td>
+</tr>
+<tr><td colspan="4"><span onMouseDown="memoEdit();" id="mi4"></span></td></tr>
+</table>
+<table id="ip5" class="w f16" cellspacing="0">
+<tr>
+<td class="w1"><font id="i5"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i5');">⑤</span></td>
+<td class="w2">12,500,000원</td>
+<td class="w1">&nbsp;</td>
+<td class="w2">1,000,000원</td>
+</tr>
+<tr><td colspan="4"><span onMouseDown="memoEdit();" id="mi5"></span></td></tr>
+</table>
+<br>
+<br>
+</div>
+<div id="layer" onClick="PopLayer.Close();">
+<table class="tb" cellspacing="0" style="background-color:#fffddd; font-size:18px">
+<tr><td class="td" onMouseDown="marking(ID,'Ｏ');">&nbsp;Ｏ&nbsp;</td><td class="td" onMouseDown="marking(ID,'Ｘ');">&nbsp;Ｘ&nbsp;</td><td class="td" onMouseDown="marking(ID,'Ｖ');">&nbsp;Ｖ&nbsp;</td><td class="td" style="color:#339900" onMouseDown="marking(ID,'？');">&nbsp;？&nbsp;</td><td class="td" style="color:#0099FF"  onMouseDown="marking(ID,'☆');">&nbsp;☆&nbsp;</td><td class="td" onMouseDown="marking(ID,'');">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="td" style="color:#6c54d5" onMouseDown="memoBox(ID);">&nbsp;Ｔ&nbsp;</td></tr>
+</table>
+</div>
+<iframe src="../../index.html" frameborder="0" width="0px" height="0px" onload="autoResize(this)" scrolling="no"></iframe>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes,target-densitydpi=medium-dpi">
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="stylesheet" type="text/css" href="../../style.css" charset="UTF-8" />
+<style type="text/css">
+#layer{display:none}
+</style>
+<script type="text/JavaScript" src="../../function.js"></script>
+<script type="text/JavaScript" src="../../jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+var ID = "";
+function idValue(n) {ID = n;}
+</script>
+</head>
+<body onContextmenu = "return false" ondragstart = "return false" onSelectstart = "return false">
+<div class="post_ct" id="viewTypeSelector">
+<p><span id="snum"></span><span id="tag"></span></p>
+<p><b>국토의 계획 및 이용에 관한 법령상 도시ㆍ군계획에 관한 설명으로 옳은 것은?</b></p>
+<p> </p>
+<p id="ip1"><font id="i1"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i1');">①</span> 도시ㆍ군기본계획의 내용이 광역도시계획의 내용과 다를 때에는 도시ㆍ군기본계획의 내용이 우선한다.<span onMouseDown="memoEdit();" id="mi1"></span></p>
+<p> </p>
+<p id="ip2"><font id="i2"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i2');">②</span> 도시ㆍ군기본계획의 수립권자가 생활권계획을 따로 수립한 때에는 해당 계획이 수립된 생활권에 대해서는 도시ㆍ군관리계획이 수립된 것으로 본다.<span onMouseDown="memoEdit();" id="mi2"></span></p>
+<p> </p>
+<p id="ip3"><font id="i3"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i3');">③</span> 시장ㆍ군수가 미리 지방의회의 의견을 들어 수립한 도시ㆍ군기본계획의 경우 도지사는 지방도시계획위원회의 심의를 거치지 않고 해당 계획을 승인할 수 있다.<span onMouseDown="memoEdit();" id="mi3"></span></p>
+<p> </p>
+<p id="ip4"><font id="i4"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i4');">④</span> 주민은 공공청사의 설치에 관한 사항에 대하여 도시ㆍ군관리계획의 입안권자에게 그 계획의 입안을 제안할 수 있다.<span onMouseDown="memoEdit();" id="mi4"></span></p>
+<br>
+<p id="ip5"><font id="i5"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i5');">⑤</span> 광역도시계획이나 도시ㆍ군기본계획을 수립할 때 도시ㆍ군관리계획을 함께 입안할 수 없다.<span onMouseDown="memoEdit();" id="mi5"></span></p>
+<br></div>
+<div id="layer" onClick="PopLayer.Close();">
+<table class="tb" cellspacing="0" style="background-color:#fffddd; font-size:18px">
+<tr><td class="td" onMouseDown="marking(ID,'Ｏ');">&nbsp;Ｏ&nbsp;</td><td class="td" onMouseDown="marking(ID,'Ｘ');">&nbsp;Ｘ&nbsp;</td><td class="td" onMouseDown="marking(ID,'Ｖ');">&nbsp;Ｖ&nbsp;</td><td class="td" style="color:#339900" onMouseDown="marking(ID,'？');">&nbsp;？&nbsp;</td><td class="td" style="color:#0099FF"  onMouseDown="marking(ID,'☆');">&nbsp;☆&nbsp;</td><td class="td" onMouseDown="marking(ID,'');">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td class="td" style="color:#6c54d5" onMouseDown="memoBox(ID);">&nbsp;Ｔ&nbsp;</td></tr>
+</table>
+</div>
+<iframe src="../../index.html" frameborder="0" width="0px" height="0px" onload="autoResize(this)" scrolling="no"></iframe>
+</body>
+
+</html>
