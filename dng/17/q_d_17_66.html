@@ -27,8 +27,11 @@
 <style type="text/css">
 #layer{display:none}
 </style>
+<link rel="stylesheet" href="../../drawing_note.css">
 <script type="text/JavaScript" src="../../function.js"></script>
 <script type="text/JavaScript" src="../../jquery-3.4.1.min.js"></script>
+<script type="text/JavaScript" src="../../signature_pad.umd.min.js"></script>
+<script type="text/JavaScript" src="../../drawing_note.js"></script>
 <script type="text/javascript">
 var ID = "";
 function idValue(n) {ID = n;}
@@ -38,15 +41,15 @@ function idValue(n) {ID = n;}
   <div class="post_ct" id="viewTypeSelector">
 <p><span id="snum"></span><span id="tag"></span></p>
 <p><b>등기신청시 서명이 허용되는 자는?</b></p>
-<br>
+<p style="margin-bottom:-15px;"><br></p>
 <p id="ip1"><font id="i1"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i1');">①</span> 협의분할에 의한 상속등기신청 시 공정증서가 아닌 분할협의서에 날인한 상속인 전원<span onMouseDown="memoEdit();" id="mi1"></span></p>
-<br>
+<p style="margin-bottom:-15px;"><br></p>
 <p id="ip2"><font id="i2"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i2');">②</span> 등기필증멸실시 등기의무자인 저당권자가 대리인에게 위임하였음을 확인한 서면 2통을 첨부하여 등기신청하는 경우 저당권자<span onMouseDown="memoEdit();" id="mi2"></span></p>
-<br>
+<p style="margin-bottom:-15px;"><br></p>
 <p id="ip3"><font id="i3"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i3');">③</span> 소유권의 등기명의인이 등기의무자로서 등기신청 시의 등기명의인<span onMouseDown="memoEdit();" id="mi3"></span></p>
-<br>
+<p style="margin-bottom:-15px;"><br></p>
 <p id="ip4"><font id="i4"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i4');">④</span> 소유권에 관한 가등기명의인의 가등기말소등기신청 시 가등기명의인<span onMouseDown="memoEdit();" id="mi4"></span></p>
-<br>
+<p style="margin-bottom:-15px;"><br></p>
 <p id="ip5"><font id="i5"></font><span class="ei" onMouseDown="PopLayer.Action(this,'layer'); idValue('i5');">⑤</span> 전세권말소등기 신청 시의 전세권자<span onMouseDown="memoEdit();" id="mi5"></span></p>
 <br>
 </div>
